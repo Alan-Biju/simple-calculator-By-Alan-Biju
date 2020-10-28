@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>calculator By Alan Biju</title>
+  </head>
+  <body>
+    <div class="main_contanier">
+      <div class="calculator_contanier">
+        <div class="output_box">
+          <input
+            type="text"
+            class="output"
+            value=""
+            placeholder="Calculator By Alan Biju"
+          />
+        </div>
+
+        <div class="buttons_site">
+          <div class="button_set1">
+            <button class="seven" value="7" onclick="display(value)">7</button>
+            <button class="eight" value="8" onclick="display(value)">8</button>
+            <button class="nine" value="9" onclick="display(value)">9</button>
+            <button id="green" value="*" onclick="display(value)">X</button>
+          </div>
+          <div class="button_set2">
+            <button class="four" value="4" onclick="display(value)">4</button>
+            <button class="five" value="5" onclick="display(value)">5</button>
+            <button class="six" value="6" onclick="display(value)">6</button>
+            <button id="green" value="-" onclick="display(value)">-</button>
+          </div>
+          <div class="button_set3">
+            <button class="one" value="1" onclick="display(value)">1</button>
+            <button class="two" value="2" onclick="display(value)">2</button>
+            <button class="three" value="3" onclick="display(value)">3</button>
+            <button id="green" value="+" onclick="display(value)">+</button>
+          </div>
+          <div class="button_set4">
+            <button id="red" onclick="remove()">AC</button>
+
+            <button class="zero" value="0" onclick="display(value)">0</button>
+            <button id="green" value="/" onclick="display(value)">/</button>
+            <button class="equal" onclick="task()">=</button>
+          </div>
+          <div class="button_set5">
+            <button class="bar1" id="green" value="(" onclick="display(value)">
+              (
+            </button>
+            <button class="bar2" value=")" id="green" onclick="display(value)">
+              )
+            </button>
+            <button class="point" value="." onclick="display(value)">.</button>
+            <button id="mod" value="%" onclick="display(value)">%</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="cal_js.js"></script>
+  </body>
+</html>
